@@ -1,0 +1,11 @@
+.\objects\uart.o: ..\user\src\UART.c
+.\objects\uart.o: ..\user\inc\uart.h
+.\objects\uart.o: ..\cmsis\inc\stm32f4xx.h
+.\objects\uart.o: ..\cmsis\inc\core_cm4.h
+.\objects\uart.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: ..\cmsis\inc\core_cmInstr.h
+.\objects\uart.o: ..\cmsis\inc\core_cmFunc.h
+.\objects\uart.o: ..\cmsis\inc\core_cmSimd.h
+.\objects\uart.o: ..\cmsis\inc\system_stm32f4xx.h
+.\objects\uart.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h

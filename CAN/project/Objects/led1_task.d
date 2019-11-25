@@ -1,0 +1,17 @@
+.\objects\led1_task.o: ..\ucosii_task\src\led1_task.c
+.\objects\led1_task.o: ..\ucosii_task\inc\start_task.h
+.\objects\led1_task.o: ..\cmsis\inc\stm32f4xx.h
+.\objects\led1_task.o: ..\cmsis\inc\core_cm4.h
+.\objects\led1_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led1_task.o: ..\cmsis\inc\core_cmInstr.h
+.\objects\led1_task.o: ..\cmsis\inc\core_cmFunc.h
+.\objects\led1_task.o: ..\cmsis\inc\core_cmSimd.h
+.\objects\led1_task.o: ..\cmsis\inc\system_stm32f4xx.h
+.\objects\led1_task.o: ..\ucosii_core\inc\os.h
+.\objects\led1_task.o: ..\ucosii_core\inc\ucos_ii.h
+.\objects\led1_task.o: ..\ucosii_core\inc\os_cfg.h
+.\objects\led1_task.o: ..\ucosii_core\inc\os_cpu.h
+.\objects\led1_task.o: ..\user\inc\led.h
+.\objects\led1_task.o: ..\user\inc\uart.h
+.\objects\led1_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\led1_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h

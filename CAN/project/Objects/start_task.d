@@ -1,0 +1,17 @@
+.\objects\start_task.o: ..\ucosii_task\src\start_task.c
+.\objects\start_task.o: ..\ucosii_task\inc\start_task.h
+.\objects\start_task.o: ..\cmsis\inc\stm32f4xx.h
+.\objects\start_task.o: ..\cmsis\inc\core_cm4.h
+.\objects\start_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\start_task.o: ..\cmsis\inc\core_cmInstr.h
+.\objects\start_task.o: ..\cmsis\inc\core_cmFunc.h
+.\objects\start_task.o: ..\cmsis\inc\core_cmSimd.h
+.\objects\start_task.o: ..\cmsis\inc\system_stm32f4xx.h
+.\objects\start_task.o: ..\ucosii_core\inc\os.h
+.\objects\start_task.o: ..\ucosii_core\inc\ucos_ii.h
+.\objects\start_task.o: ..\ucosii_core\inc\os_cfg.h
+.\objects\start_task.o: ..\ucosii_core\inc\os_cpu.h
+.\objects\start_task.o: ..\user\inc\led.h
+.\objects\start_task.o: ..\user\inc\tim_in.h
+.\objects\start_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\start_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h
