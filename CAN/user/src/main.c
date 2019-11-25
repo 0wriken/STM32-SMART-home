@@ -54,6 +54,9 @@ int main(void)
 	LCD_Port_Init();
 	LCD_Init();
 	Delay_init();
+	
+	//display_line(300,20,30,0,RED);
+	
 	init_touch_gpio();
 	systick_init(1000/OS_TICKS_PER_SEC);	//设置心跳节拍
 	
@@ -66,8 +69,14 @@ int main(void)
 	{
 		
 		LCD_display_pic(0,150,(u8*)gImage_11);
-		printf("%d\n",k++);
-		delay_ms(1000);
+		play_Square(40,100,RED);
+		while ( t_para.sta.loosen == 0 )//等待松手标志置1
+		{
+			delay_ms(10);//等待按下触摸屏
+		}
+		t_para.sta.loosen = 0;
+		if(t_para.sx <120&&t_para.sx >40&&t_para.sy>100&&t_para.sx < 150)
+			printf("调试成功!!!\n");
 	}
 	/* 创建一个起始任务 */
 	OSTaskCreateExt(start_task,

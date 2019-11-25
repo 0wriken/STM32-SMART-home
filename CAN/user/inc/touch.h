@@ -64,7 +64,7 @@ u16 return_xy_adval(u8 cmd);
 u8 get_xyad_aveval(u16 *xvol,u16 *yvol);
 void touch_adjust(void);
 void init_timer6(void);
-void lcd_dis_adjust_point(u8 x,u8 y,u16 color);
+void lcd_dis_adjust_point(u16 x,u16 y,u16 color);
 
 #endif
 

@@ -276,22 +276,23 @@ void display_line(u16 x,u16 y,u16 lenth,u16 angle,u16 color)
 		{
 			dispaly_point(x+i,y,color);
 		}
+		
 	}
-	if(angle==90)
+	else if(angle==90)
 	{
 		for(i=0;i<lenth;i++)
 		{
 			dispaly_point(x,y+i,color);
 		}
 	}
-	if(angle==180)
+	else if(angle==180)
 	{
 			for(i=0;i<lenth;i++)
 		{
 			dispaly_point(x-i,y,color);
 		}
 	}
-	if(angle==270)
+	else if(angle==270)
 	{
 		for(i=0;i<lenth;i++)
 		{
@@ -340,6 +341,14 @@ void play_string(u16 x,u16 y,u16 t_color,u16 b_color,u8*buff)
 		}
 	}
 }
+void play_Square(u16 x,u16 y,u16 color)
+{
+	display_line(x,y,80,0,color);
+	display_line(x+80,y,50,90,color);
+	display_line(x+80,y+50,80,180,color);
+	display_line(x,y+50,50,270,color);
+}
+
 
 
 

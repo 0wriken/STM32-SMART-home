@@ -251,11 +251,10 @@ AA:
 		printf("校正触摸y:%d\r\n", t_para.sy);
 		lcd_dis_adjust_point(lcd_table[i][0],lcd_table[i][1],WHITE);//消除上一个十字
 	}
-	if (abs(touch_table[0][1] - touch_table[1][1]) > 100 //判断触摸屏点的位置，是否在十字架上。
-	 || abs(touch_table[2][1] - touch_table[3][1]) > 100
-	 || abs(touch_table[0][0] - touch_table[2][0]) > 100
-	 || abs(touch_table[1][0] - touch_table[3][0]) > 100
-	 || abs(touch_table[0][0] - touch_table[1][0]) < 50)
+	if (abs(touch_table[0][1] - touch_table[1][1]) > 150 //判断触摸屏点的位置，是否在十字架上。
+	 || abs(touch_table[2][1] - touch_table[3][1]) > 150
+	 || abs(touch_table[0][0] - touch_table[2][0]) > 150
+	 || abs(touch_table[1][0] - touch_table[3][0]) > 150)
 	{
 		goto AA;//没有点中正确位置，重新获取坐标
 	}
@@ -339,12 +338,13 @@ void TIM6_DAC_IRQHandler()
 		}
 	}
 }
-void lcd_dis_adjust_point(u8 x,u8 y,u16 color)
+void lcd_dis_adjust_point(u16 x,u16 y,u16 color)
 {
 	display_line(x,y,30,0,color);
 	display_line(x,y,30,180,color);
 	display_line(x,y,30,90,color);
 	display_line(x,y,30,270,color);
+	//printf("x:%d,y:%d\n",x,y);
 
 }
 
