@@ -1,0 +1,13 @@
+.\objects\touch.o: ..\user\src\touch.c
+.\objects\touch.o: ..\user\inc\touch.h
+.\objects\touch.o: ..\cmsis\inc\stm32f4xx.h
+.\objects\touch.o: ..\cmsis\inc\core_cm4.h
+.\objects\touch.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\touch.o: ..\cmsis\inc\core_cmInstr.h
+.\objects\touch.o: ..\cmsis\inc\core_cmFunc.h
+.\objects\touch.o: ..\cmsis\inc\core_cmSimd.h
+.\objects\touch.o: ..\cmsis\inc\system_stm32f4xx.h
+.\objects\touch.o: ..\user\inc\delay.h
+.\objects\touch.o: ..\user\inc\ili9486.h
+.\objects\touch.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\touch.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h
