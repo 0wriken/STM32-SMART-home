@@ -472,6 +472,11 @@
               <FileType>5</FileType>
               <FilePath>..\user\inc\Can.h</FilePath>
             </File>
+            <File>
+              <FileName>delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\user\inc\delay.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

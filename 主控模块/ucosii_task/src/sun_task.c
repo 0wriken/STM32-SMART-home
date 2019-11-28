@@ -16,6 +16,7 @@ void sun_task(void *arg)
 												0,
 											 &error3);
 	LCD_Clear(0,319,0,479,0xfff);
+	LCD_display_pic(200,250,(u8 *)gImage2_back);
 	while(1)
 	{
 		if(can1_receive_msg(re2_buf,&g2id))

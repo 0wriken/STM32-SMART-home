@@ -2,6 +2,7 @@
 #include "led.h"
 #include "stdlib.h"
 #include "uart.h"
+#include "check.h"
 u8 error2;
 u8 rx_buf[100];
 u32 id;
@@ -39,6 +40,16 @@ void check_task(void *arg)
 												0,
 											 &error2);
 	LCD_Clear(0,319,0,479,0xfff);//清屏
+	printf("进入灯光控制\n");
+	///显示界面
+	LCD_display_pic(200,250,(u8 *)gImage3_back);
+	LCD_display_pic(40,100,(u8 *)gImage_jieni);
+	LCD_display_pic(40,200,(u8 *)gImage_red);
+	LCD_display_pic(40,300,(u8 *)gImage_green);
+	LCD_display_pic(150,300,(u8 *)gImage_close);
+	LCD_display_pic(150,100,(u8 *)gImage_close);
+	LCD_display_pic(150,200,(u8 *)gImage_close);
+	
 	while(1)
 	{
 		int i=0;
@@ -86,7 +97,7 @@ void check_task(void *arg)
 		{
 			send_wait((u32 )0XAE,(u8 *)"LED3_OF",8);
 		}
-		if(set_task_point(80,400,(u8 *)"quit")==1)
+		if(set_task_point(200,400,(u8 *)"quit")==1)
 		{
 					OSTaskSuspend(8);//挂起自己回到主界面
 		}

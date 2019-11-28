@@ -79,6 +79,8 @@ int main(void)
 //			break;
 //	}
 	//tim_in_init();
+//	
+
 	OSInit();	//初始化操作系统
 
 	//int k=0;

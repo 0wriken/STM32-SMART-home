@@ -28,16 +28,27 @@ void Delay_ms(int nms)
     while(!(TIM1->SR&(0X1<<0)));
 }
 
-void delay_ms(int time)
-{    
-   u32 i=0;  
-   while(time--)
+void delay_mms(int ms)
+{   
+
+   u16 i=0;  
+   while(ms--)
    {
       i=12000;  //自己定义
       while(i--) ;    
    }
 
- }
+}
+void delay_ms(int ms)
+{
+	
+   u16 i=0;  
+   while(ms--)
+   {
+      i=12000;  //自己定义
+      while(i--) ;    
+   }
+}
 void delay_us(int time)
 {    
    u32 i=0;  

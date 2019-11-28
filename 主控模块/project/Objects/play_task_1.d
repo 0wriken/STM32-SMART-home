@@ -20,4 +20,4 @@
 .\objects\play_task_1.o: ..\user\inc\delay.h
 .\objects\play_task_1.o: ..\user\inc\ili9486.h
 .\objects\play_task_1.o: ..\user\inc\touch.h
-.\objects\play_task_1.o: ..\user\inc\pic.h
+.\objects\play_task_1.o: ..\user\inc\play.h
