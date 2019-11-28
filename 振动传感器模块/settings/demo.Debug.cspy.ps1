@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\CAN总线\05振动传感器模块 2\05振动传感器模块\settings\demo.Debug.general.xcl" --backend -f "D:\CAN总线\05振动传感器模块 2\05振动传感器模块\settings\demo.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\GIT3\振动传感器模块\settings\demo.Debug.general.xcl" --backend -f "D:\GIT3\振动传感器模块\settings\demo.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\CAN总线\05振动传感器模块 2\05振动传感器模块\settings\demo.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\CAN总线\05振动传感器模块 2\05振动传感器模块\settings\demo.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\GIT3\振动传感器模块\settings\demo.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\GIT3\振动传感器模块\settings\demo.Debug.driver.xcl" 
 }

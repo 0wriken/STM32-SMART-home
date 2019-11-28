@@ -20,4 +20,3 @@
 .\objects\lcd_task.o: ..\user\inc\delay.h
 .\objects\lcd_task.o: ..\user\inc\ili9486.h
 .\objects\lcd_task.o: ..\user\inc\touch.h
-.\objects\lcd_task.o: ..\user\inc\pic.h

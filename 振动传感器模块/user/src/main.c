@@ -29,8 +29,7 @@ int main()
     
     while(1)
     {
-      CAN_Receive_Buffer((unsigned char *)buf);
-      if(*buf!=0)
+      if(CAN_Receive_Buffer((unsigned char *)buf))
       printf("rec_is:%s\n",buf);
      //printf("rec_ok\n");
       delay_ms(2000);

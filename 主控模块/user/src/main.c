@@ -8,6 +8,7 @@
 #include "delay.h"
 #include "ili9486.h"
 #include "touch.h"
+//#include "pic.h"
 u32 getid1;
 u8 rec_buf1[100]={0};
 /*
@@ -51,29 +52,37 @@ int main(void)
 	led_init();		//初始化LED灯接口
 	key_init();
 	uart1_init(84000000, 9600);
-	printf("coming statr\n");
+	printf("start\n");
 	init_can1(21,11,4,2,0);//-----CAN总线通信速度：125K--16个Tq
-		while(1)
-	{
-		 can1_send_msg((u32)0XAF,(u8 *)"66666",8);
-		printf("send_ok");
-		can1_receive_msg(rec_buf1,&getid1);
-		printf("rec:%s  getid:%d\n",rec_buf1,getid1);
-		delay_ms(2000);
-	}
+
 	LCD_Port_Init();
 	LCD_Init();
 	Delay_init();
-	
+//		//测试CAN
+//			while(1)
+//	{
+//		//play_string(150,200,RED,WHITE,v_buf,5);
+//		 can1_send_msg((u32)0XAE,(u8 *)"LED_ON",8);
+//		printf("send_ok");
+//		can1_receive_msg(rec_buf1,&getid1);
+//		printf("rec:%s  getid:%d\n",rec_buf1,getid1);
+//		delay_ms(2000);
+//	}
+//	
 	//display_line(300,20,30,0,RED);
 	
 	init_touch_gpio();
 	systick_init(1000/OS_TICKS_PER_SEC);	//设置心跳节拍
-	
-	tim_in_init();
+//		while(1)
+//	{
+//		if(set_task_point(40,100,(u8 *)NULL)==1)
+//			break;
+//	}
+	//tim_in_init();
 	OSInit();	//初始化操作系统
 
-	int k=0;
+	//int k=0;
+	//测试显示
 //	LCD_Clear(0,319,0,479,0xfff);
 //	while(1)
 //	{
@@ -104,6 +113,6 @@ int main(void)
 	/* 防止操作系统启动失败，程序跑飞 */
 	while(1)
 	{
-		
+		;
 	}
 }

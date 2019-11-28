@@ -10,7 +10,7 @@ void LCD_ILI9486_Parameter(u16 data);
 void LCD_Clear(u16 SX, u16 EX, u16 SY, u16 EY, u16 Color);
 void LCD_Init(void);
 void LCD_display_pic(u16 X,u16 Y,u8 *pic_data);
-void play_string(u16 x,u16 y,u16 t_color,u16 b_color,u8*buff);
+void play_string(u16 x,u16 y,u16 t_color,u16 b_color,u8*buff,u8 size);
 void display_line(u16 x,u16 y,u16 lenth,u16 angle,u16 color);
 void play_Square(u16 x,u16 y,u16 color);
 

@@ -326,19 +326,22 @@ void lcd_dis_txt(u16 x,u16 y,u16 t_color,u16 b_color,u8*txt_buf)
 		}
 	}
 }
-void play_string(u16 x,u16 y,u16 t_color,u16 b_color,u8*buff)
+void play_string(u16 x,u16 y,u16 t_color,u16 b_color,u8*buff,u8 size)
 {
 		u8 txt_data=0;
+	for(int k=0;k<size;k++)
+	{
 	for(u8 i=0;i<16;i++)
 	{
-		txt_data=buff[i];
+		txt_data=buff[i+(k*16)];
 		for(u8 j=0;j<8;j++)
 		{
 			if(txt_data&(0x80>>j))
-				dispaly_point(x+j,y+i,t_color);
+				dispaly_point(x+j+(k*8),y+i,t_color);
 			else 
-				dispaly_point(x+j,y+i,b_color);
+				dispaly_point(x+j+(k*8),y+i,b_color);
 		}
+	}
 	}
 }
 void play_Square(u16 x,u16 y,u16 color)

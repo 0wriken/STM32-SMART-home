@@ -12,7 +12,7 @@
         <ByteLimit>50</ByteLimit>
     </Stack>
     <DebugChecksum>
-        <Checksum>2967907114</Checksum>
+        <Checksum>3685949384</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
@@ -79,9 +79,6 @@
         <GraphEnabled>0</GraphEnabled>
         <ShowTimeLog>1</ShowTimeLog>
     </DataSample>
-    <Breakpoints>
-        <Count>0</Count>
-    </Breakpoints>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -91,6 +88,9 @@
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
     </TermIOLog>
+    <Breakpoints>
+        <Count>0</Count>
+    </Breakpoints>
     <Aliases>
         <A0>_ "E:\XYD\xydwork\2017年\M4\CAN总线\STM8带CAN总线通信的驱动程序\05振动传感器模块\user\src\main.c" ""</A0>
         <A1>_ "F:\XYD\工作资料\2017年\M4\CAN总线\STM8带CAN总线通信的驱动程序\05振动传感器模块\user\src\MCP2515.c" ""</A1>

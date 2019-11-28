@@ -23,10 +23,13 @@
 ".\objects\os_time.o"
 ".\objects\os_tmr.o"
 ".\objects\os_cpu_a.o"
+".\objects\play_task_1.o"
 ".\objects\start_task.o"
 ".\objects\lcd_task.o"
-".\objects\play_task.o"
 ".\objects\check_task.o"
+".\objects\play_task_1.o"
+".\objects\water_task.o"
+".\objects\sun_task.o"
 --strict --scatter ".\Objects\stm32f407zgt6.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

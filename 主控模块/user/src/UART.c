@@ -54,6 +54,13 @@ void USART1_IRQHandler()
         /* 接收计数变量清零，为新一轮接收做准备 */
         rev_cnt = 0;   
 	}
+//	u8 data;
+//	if(USART1->SR & (0X01<<5))  //接收中断
+//	{
+//		data=USART1->DR;
+//		while(!(USART1->SR&(0x01<<7)));
+//		USART1->DR=data;
+//	}
 }
 
 

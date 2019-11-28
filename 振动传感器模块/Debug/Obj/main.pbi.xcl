@@ -1,26 +1,26 @@
-"D:\CAN总线\05振动传感器模块 2\05振动传感器模块\user\src\main.c"
+"D:\GIT3\振动传感器模块\user\src\main.c"
 -std=c99
 -ferror-limit=0
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\user\inc
+D:\GIT3\振动传感器模块\user\inc
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\user\src
+D:\GIT3\振动传感器模块\user\src
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\STM8S_StdPeriph_Driver\src
+D:\GIT3\振动传感器模块\STM8S_StdPeriph_Driver\src
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\STM8S_StdPeriph_Driver\inc
+D:\GIT3\振动传感器模块\STM8S_StdPeriph_Driver\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\stm8\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\stm8\inc\c
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\user\inc
+D:\GIT3\振动传感器模块\user\inc
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\user\src
+D:\GIT3\振动传感器模块\user\src
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\STM8S_StdPeriph_Driver\src
+D:\GIT3\振动传感器模块\STM8S_StdPeriph_Driver\src
 -I
-D:\CAN总线\05振动传感器模块 2\05振动传感器模块\STM8S_StdPeriph_Driver\inc
+D:\GIT3\振动传感器模块\STM8S_StdPeriph_Driver\inc
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

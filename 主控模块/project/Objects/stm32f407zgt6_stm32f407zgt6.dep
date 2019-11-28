@@ -1,6 +1,6 @@
 Dependencies for Project 'stm32f407zgt6', Target 'stm32f407zgt6': (DO NOT MODIFY !)
 F (..\cmsis\src\startup_stm32f40_41xxx.s)(0x5DDB2B92)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f40_41xxx.lst --xref -o .\objects\startup_stm32f40_41xxx.o --depend .\objects\startup_stm32f40_41xxx.d)
-F (..\cmsis\src\stm32f4xx_it.c)(0x5DDB2B92)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
+F (..\cmsis\src\stm32f4xx_it.c)(0x5DDF200C)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (..\cmsis\inc\stm32f4xx_it.h)(0x5DDB2B93)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
@@ -17,7 +17,7 @@ I (..\cmsis\inc\core_cmInstr.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
-F (..\user\src\main.c)(0x5DDD12C7)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\user\src\main.c)(0x5DDF8370)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -29,7 +29,7 @@ I (..\ucosii_core\inc\os.h)(0x5DDB2B92)
 I (..\ucosii_core\inc\ucos_ii.h)(0x5DDB2B92)
 I (..\ucosii_core\inc\os_cfg.h)(0x5DDB2B92)
 I (..\ucosii_core\inc\os_cpu.h)(0x5DDB2B92)
-I (..\ucosii_task\inc\start_task.h)(0x5DDD6D2B)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
 I (..\user\inc\led.h)(0x5DDB2B92)
 I (..\user\inc\uart.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
@@ -37,7 +37,7 @@ I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\user\inc\Can.h)(0x5DDD0CAF)
 I (..\user\inc\tim_in.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-I (..\user\inc\ili9486.h)(0x5DDB3BC5)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
 I (..\user\inc\touch.h)(0x5DDB35D2)
 F (..\user\src\led.c)(0x5DDB2B92)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (..\user\inc\led.h)(0x5DDB2B92)
@@ -48,7 +48,7 @@ I (..\cmsis\inc\core_cmInstr.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
-F (..\user\src\UART.c)(0x5DDB2B92)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+F (..\user\src\UART.c)(0x5DDF2CD5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (..\user\inc\uart.h)(0x5DDB2B92)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
@@ -61,7 +61,7 @@ I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 F (..\user\inc\uart.h)(0x5DDB2B92)()
 F (..\user\src\pwm_out.c)(0x5DDB2B92)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\pwm_out.o --omf_browse .\objects\pwm_out.crf --depend .\objects\pwm_out.d)
-I (..\user\inc\pwm_out.h)(0x5DDB2B92)
+I (..\user\inc\pwm_out.h)(0x5DDF37AB)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -71,7 +71,7 @@ I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
-F (..\user\src\tim_in.c)(0x5DDB2B92)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\tim_in_1.o --omf_browse .\objects\tim_in_1.crf --depend .\objects\tim_in_1.d)
+F (..\user\src\tim_in.c)(0x5DDF7BBC)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\tim_in_1.o --omf_browse .\objects\tim_in_1.crf --depend .\objects\tim_in_1.d)
 I (..\user\inc\tim_in.h)(0x5DDB2B92)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
@@ -82,8 +82,8 @@ I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
-F (..\user\src\ili9486.c)(0x5DDB3C62)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\ili9486.o --omf_browse .\objects\ili9486.crf --depend .\objects\ili9486.d)
-I (..\user\inc\ILI9486.h)(0x5DDB3BC5)
+F (..\user\src\ili9486.c)(0x5DDDDCED)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\ili9486.o --omf_browse .\objects\ili9486.crf --depend .\objects\ili9486.d)
+I (..\user\inc\ILI9486.h)(0x5DDDD555)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -92,7 +92,7 @@ I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-F (..\user\inc\ili9486.h)(0x5DDB3BC5)()
+F (..\user\inc\ili9486.h)(0x5DDDD555)()
 F (..\user\src\delay.c)(0x5DDB2B92)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
@@ -102,7 +102,7 @@ I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-F (..\user\src\touch.c)(0x5DDB38CF)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\touch.o --omf_browse .\objects\touch.crf --depend .\objects\touch.d)
+F (..\user\src\touch.c)(0x5DDF389E)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\touch.o --omf_browse .\objects\touch.crf --depend .\objects\touch.d)
 I (..\user\inc\touch.h)(0x5DDB35D2)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
@@ -112,12 +112,12 @@ I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
 I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
 I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-I (..\user\inc\ili9486.h)(0x5DDB3BC5)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
 I (D:\keil5MDK\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 F (..\user\inc\touch.h)(0x5DDB35D2)()
-F (..\user\inc\pic.h)(0x5DDD02F7)()
-F (..\user\src\can.c)(0x5DDD0CF4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
+F (..\user\inc\pic.h)(0x5DDF74C0)()
+F (..\user\src\can.c)(0x5DDDE57D)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
 I (..\user\inc\Can.h)(0x5DDD0CAF)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
@@ -172,12 +172,35 @@ I (..\ucosii_core\inc\ucos_ii.h)(0x5DDB2B92)
 I (..\ucosii_core\inc\os_cfg.h)(0x5DDB2B92)
 I (..\ucosii_core\inc\os_cpu.h)(0x5DDB2B92)
 F (..\ucosii_core\src\os_cpu_a.asm)(0x5DDB2B92)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526" --pd "STM32F407xx SETA 1"--list .\listings\os_cpu_a.lst --xref -o .\objects\os_cpu_a.o --depend .\objects\os_cpu_a.d)
+F (..\ucosii_task\src\play_task.c)(0x5DDF7780)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\play_task_1.o --omf_browse .\objects\play_task_1.crf --depend .\objects\play_task_1.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
+I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
+I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
+I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\cmsis\inc\core_cmInstr.h)(0x5DDB2B92)
+I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
+I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
+I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\ucos_ii.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os_cfg.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os_cpu.h)(0x5DDB2B92)
+I (..\user\inc\led.h)(0x5DDB2B92)
+I (..\user\inc\uart.h)(0x5DDB2B92)
+I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\user\inc\Can.h)(0x5DDD0CAF)
+I (..\user\inc\tim_in.h)(0x5DDB2B92)
+I (..\user\inc\delay.h)(0x5DDB2B92)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
+I (..\user\inc\touch.h)(0x5DDB35D2)
+I (..\user\inc\pic.h)(0x5DDF74C0)
 F (..\ucosii_core\inc\os.h)(0x5DDB2B92)()
 F (..\ucosii_core\inc\os_cfg.h)(0x5DDB2B92)()
 F (..\ucosii_core\inc\os_cpu.h)(0x5DDB2B92)()
 F (..\ucosii_core\inc\ucos_ii.h)(0x5DDB2B92)()
-F (..\ucosii_task\src\start_task.c)(0x5DDCCD41)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
-I (..\ucosii_task\inc\start_task.h)(0x5DDD6D2B)
+F (..\ucosii_task\src\start_task.c)(0x5DDF7841)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -196,11 +219,11 @@ I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\user\inc\Can.h)(0x5DDD0CAF)
 I (..\user\inc\tim_in.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-I (..\user\inc\ili9486.h)(0x5DDB3BC5)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
 I (..\user\inc\touch.h)(0x5DDB35D2)
-F (..\ucosii_task\inc\start_task.h)(0x5DDD6D2B)()
-F (..\ucosii_task\src\lcd_task.c)(0x5DDD0D0E)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\lcd_task.o --omf_browse .\objects\lcd_task.crf --depend .\objects\lcd_task.d)
-I (..\ucosii_task\inc\start_task.h)(0x5DDD6D2B)
+F (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)()
+F (..\ucosii_task\src\lcd_task.c)(0x5DDF81C0)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\lcd_task.o --omf_browse .\objects\lcd_task.crf --depend .\objects\lcd_task.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -219,11 +242,10 @@ I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\user\inc\Can.h)(0x5DDD0CAF)
 I (..\user\inc\tim_in.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-I (..\user\inc\ili9486.h)(0x5DDB3BC5)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
 I (..\user\inc\touch.h)(0x5DDB35D2)
-I (..\user\inc\pic.h)(0x5DDD02F7)
-F (..\ucosii_task\src\play_task.c)(0x5DDD6DC8)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\play_task.o --omf_browse .\objects\play_task.crf --depend .\objects\play_task.d)
-I (..\ucosii_task\inc\start_task.h)(0x5DDD6D2B)
+F (..\ucosii_task\src\check_task.c)(0x5DDF7B21)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\check_task.o --omf_browse .\objects\check_task.crf --depend .\objects\check_task.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -242,10 +264,11 @@ I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\user\inc\Can.h)(0x5DDD0CAF)
 I (..\user\inc\tim_in.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-I (..\user\inc\ili9486.h)(0x5DDB3BC5)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
 I (..\user\inc\touch.h)(0x5DDB35D2)
-F (..\ucosii_task\src\check_task.c)(0x5DDD6ED4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\check_task.o --omf_browse .\objects\check_task.crf --depend .\objects\check_task.d)
-I (..\ucosii_task\inc\start_task.h)(0x5DDD6D2B)
+I (D:\keil5MDK\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
+F (..\ucosii_task\src\play_task.c)(0x5DDF7780)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\play_task_1.o --omf_browse .\objects\play_task_1.crf --depend .\objects\play_task_1.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
 I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
 I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
 I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -264,5 +287,52 @@ I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\user\inc\Can.h)(0x5DDD0CAF)
 I (..\user\inc\tim_in.h)(0x5DDB2B92)
 I (..\user\inc\delay.h)(0x5DDB2B92)
-I (..\user\inc\ili9486.h)(0x5DDB3BC5)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
 I (..\user\inc\touch.h)(0x5DDB35D2)
+I (..\user\inc\pic.h)(0x5DDF74C0)
+F (..\ucosii_task\src\water_task.c)(0x5DDF7805)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\water_task.o --omf_browse .\objects\water_task.crf --depend .\objects\water_task.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
+I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
+I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
+I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\cmsis\inc\core_cmInstr.h)(0x5DDB2B92)
+I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
+I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
+I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\ucos_ii.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os_cfg.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os_cpu.h)(0x5DDB2B92)
+I (..\user\inc\led.h)(0x5DDB2B92)
+I (..\user\inc\uart.h)(0x5DDB2B92)
+I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\user\inc\Can.h)(0x5DDD0CAF)
+I (..\user\inc\tim_in.h)(0x5DDB2B92)
+I (..\user\inc\delay.h)(0x5DDB2B92)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
+I (..\user\inc\touch.h)(0x5DDB35D2)
+I (..\user\inc\rain.h)(0x5DDF7B8F)
+F (..\ucosii_task\src\sun_task.c)(0x5DDF77BA)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\cmsis\inc -I ..\user\inc -I ..\ucosii_core\inc -I ..\ucosii_task\inc-I.\RTE\_stm32f407zgt6-ID:\keil5MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx-o .\objects\sun_task.o --omf_browse .\objects\sun_task.crf --depend .\objects\sun_task.d)
+I (..\ucosii_task\inc\start_task.h)(0x5DDF7B64)
+I (..\cmsis\inc\stm32f4xx.h)(0x5DDB2B93)
+I (..\cmsis\inc\core_cm4.h)(0x5DDB2B92)
+I (D:\keil5MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\cmsis\inc\core_cmInstr.h)(0x5DDB2B92)
+I (..\cmsis\inc\core_cmFunc.h)(0x5DDB2B92)
+I (..\cmsis\inc\core_cmSimd.h)(0x5DDB2B92)
+I (..\cmsis\inc\system_stm32f4xx.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\ucos_ii.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os_cfg.h)(0x5DDB2B92)
+I (..\ucosii_core\inc\os_cpu.h)(0x5DDB2B92)
+I (..\user\inc\led.h)(0x5DDB2B92)
+I (..\user\inc\uart.h)(0x5DDB2B92)
+I (D:\keil5MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\keil5MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\user\inc\Can.h)(0x5DDD0CAF)
+I (..\user\inc\tim_in.h)(0x5DDB2B92)
+I (..\user\inc\delay.h)(0x5DDB2B92)
+I (..\user\inc\ili9486.h)(0x5DDDD555)
+I (..\user\inc\touch.h)(0x5DDB35D2)
+I (..\user\inc\sun.h)(0x5DDF7B8F)

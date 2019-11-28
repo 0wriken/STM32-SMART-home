@@ -251,10 +251,10 @@ AA:
 		printf("校正触摸y:%d\r\n", t_para.sy);
 		lcd_dis_adjust_point(lcd_table[i][0],lcd_table[i][1],WHITE);//消除上一个十字
 	}
-	if (abs(touch_table[0][1] - touch_table[1][1]) > 150 //判断触摸屏点的位置，是否在十字架上。
-	 || abs(touch_table[2][1] - touch_table[3][1]) > 150
-	 || abs(touch_table[0][0] - touch_table[2][0]) > 150
-	 || abs(touch_table[1][0] - touch_table[3][0]) > 150)
+	if (abs(touch_table[0][1] - touch_table[1][1]) > 500 //判断触摸屏点的位置，是否在十字架上。
+	 || abs(touch_table[2][1] - touch_table[3][1]) > 500
+	 || abs(touch_table[0][0] - touch_table[2][0]) > 500
+	 || abs(touch_table[1][0] - touch_table[3][0]) > 500)
 	{
 		goto AA;//没有点中正确位置，重新获取坐标
 	}

@@ -538,6 +538,11 @@
               <FilePath>..\ucosii_core\src\os_cpu_a.asm</FilePath>
             </File>
             <File>
+              <FileName>play_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ucosii_task\src\play_task.c</FilePath>
+            </File>
+            <File>
               <FileName>os.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\ucosii_core\inc\os.h</FilePath>
@@ -578,14 +583,24 @@
               <FilePath>..\ucosii_task\src\lcd_task.c</FilePath>
             </File>
             <File>
+              <FileName>check_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ucosii_task\src\check_task.c</FilePath>
+            </File>
+            <File>
               <FileName>play_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\ucosii_task\src\play_task.c</FilePath>
             </File>
             <File>
-              <FileName>check_task.c</FileName>
+              <FileName>water_task.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\ucosii_task\src\check_task.c</FilePath>
+              <FilePath>..\ucosii_task\src\water_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>sun_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ucosii_task\src\sun_task.c</FilePath>
             </File>
           </Files>
         </Group>

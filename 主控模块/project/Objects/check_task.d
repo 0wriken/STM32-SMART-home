@@ -20,3 +20,4 @@
 .\objects\check_task.o: ..\user\inc\delay.h
 .\objects\check_task.o: ..\user\inc\ili9486.h
 .\objects\check_task.o: ..\user\inc\touch.h
+.\objects\check_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdlib.h
