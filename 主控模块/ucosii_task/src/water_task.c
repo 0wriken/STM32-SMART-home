@@ -7,6 +7,7 @@ u8 error4;
 u8 re1_buf[100];
 u32 g1id;
 u8 set_task_point(int x,int y,u8 *buf);
+extern u8 flag1;
 void delay_mms(int ms);
 
 //是否有雨水
@@ -19,7 +20,7 @@ void water_task(void *arg)
 											 &error4);
 	LCD_Clear(0,319,0,479,0xfff);
 	printf("进入雨水检测\n");
-	LCD_display_pic(200,250,(u8 *)gImage_back);
+	LCD_display_pic(200,400,(u8 *)gImage_back);
 	while(1)
 	{
 		if(can1_receive_msg(re1_buf,&g1id))
@@ -44,9 +45,11 @@ void water_task(void *arg)
 			}
 		}	
 		delay_mms(1000);//每一秒检测一次
-		if(set_task_point(200,250,(u8 *)"quit")==1)
+		if(set_task_point(200,400,(u8 *)"quit")==1)
 		{
+			 flag1=1;
 					OSTaskSuspend(9);//挂起自己回到主界面
+			break;
 		}
 }
 }

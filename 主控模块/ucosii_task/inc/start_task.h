@@ -11,7 +11,6 @@
 #include "delay.h"
 #include "ili9486.h"
 #include "touch.h"
-
 typedef struct box
 { 
 	u32 check_id[9];//´æ·Åid×ö¼ì²é

@@ -6,6 +6,7 @@
 u8 error;
 u32 getid;
 u8 rec_buf[100]={0};
+extern u8 flag1;
 u8 set_task_point(u16 x,u16 y,u8 *buf)
 {
 		//play_Square(x,y,RED);
@@ -29,7 +30,7 @@ void lcd_task(void *arg)
 	
 	//OK键按下
 	printf("coming\n");
-	//灯光控制
+	LCD_Clear(0,319,0,479,0xfff);//清屏
 	OSTaskResume(7);
 	OSTaskResume(8);
 	OSTaskResume(9);
@@ -38,9 +39,18 @@ LCD_display_pic(40,100,(u8 *)gImage_rgb);
 LCD_display_pic(200,100,(u8 *)gImage_light);
 LCD_display_pic(40,250,(u8 *)gImage_rain);
 LCD_display_pic(200,250,(u8 *)gImage_zhendong);
-LCD_display_pic(200,250,(u8 *)gImage_desk);
+//LCD_display_pic(0,0,(u8 *)gImage_desk);
 	while(1)
 	{
+		if(flag1==1)
+		{
+		LCD_Clear(0,319,0,479,0xfff);//清屏
+	LCD_display_pic(40,100,(u8 *)gImage_rgb); 
+LCD_display_pic(200,100,(u8 *)gImage_light);
+LCD_display_pic(40,250,(u8 *)gImage_rain);
+LCD_display_pic(200,250,(u8 *)gImage_zhendong);
+			flag1=0;
+		}
 	if(set_task_point(40,100,(u8 *)NULL)==1)
 	{
 		OSFlagPost (flag, 
@@ -48,7 +58,7 @@ LCD_display_pic(200,250,(u8 *)gImage_desk);
 								OS_FLAG_SET,
 							 &error);
 	}
-	printf("灯光开启\n");
+	//printf("灯光开启\n");
 		if(set_task_point(200,250,(u8 *)"检测震动")==1)
 	{
 		OSFlagPost (flag, 
@@ -56,7 +66,7 @@ LCD_display_pic(200,250,(u8 *)gImage_desk);
 								OS_FLAG_SET,
 							 &error);
 	}
-		printf("震动开启\n");
+		//printf("震动开启\n");
 		if(set_task_point(40,250,(u8 *)"雨水")==1)
 	{
 		OSFlagPost (flag, 
@@ -64,7 +74,7 @@ LCD_display_pic(200,250,(u8 *)gImage_desk);
 								OS_FLAG_SET,
 							 &error);
 	}
-		printf("光敏开启\n");
+		//printf("光敏开启\n");
 		if(set_task_point(200,100,(u8 *)"光敏")==1)
 	{
 		OSFlagPost (flag, 

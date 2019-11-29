@@ -5,7 +5,6 @@
 ".\objects\main.o"
 ".\objects\led.o"
 ".\objects\uart.o"
-".\objects\pwm_out.o"
 ".\objects\tim_in_1.o"
 ".\objects\ili9486.o"
 ".\objects\delay.o"

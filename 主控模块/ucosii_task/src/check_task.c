@@ -10,6 +10,7 @@ u8 send_buf[100];
 dis display={
 	{0xaf},{100},{200}
 };
+extern u8 flag1;
 u8 set_task_point(int x,int y,u8 *buf);
 void send_wait(u32 id,u8 * buf,u8 len)
 {
@@ -42,7 +43,7 @@ void check_task(void *arg)
 	LCD_Clear(0,319,0,479,0xfff);//清屏
 	printf("进入灯光控制\n");
 	///显示界面
-	LCD_display_pic(200,250,(u8 *)gImage3_back);
+	LCD_display_pic(200,400,(u8 *)gImage3_back);
 	LCD_display_pic(40,100,(u8 *)gImage_jieni);
 	LCD_display_pic(40,200,(u8 *)gImage_red);
 	LCD_display_pic(40,300,(u8 *)gImage_green);
@@ -58,20 +59,22 @@ void check_task(void *arg)
 		//t_para.sx=0;
 		//t_para.sy=0;
 		//等待接收CAN的值
-		can1_receive_msg(rx_buf,&id);
-		for(i=0;i<9;i++)
-		{
-			if(display.check_id[i]==id)
-				break;
-		}
+//		can1_receive_msg(rx_buf,&id);
+//		for(i=0;i<9;i++)
+//		{
+//			if(display.check_id[i]==id)
+//				break;
+//		}
 		//play_string((u16)display.x[i],(u16)display.y[i],
 		//WHITE,RED,rx_buf,10);	
 		
 		//检测触摸屏是否按下发送信号至CAN
+		t_para.sx=0;
+		t_para.sy=0;
 		if(set_task_point(40,100,(u8 *)"LED1_ON")==1)
 		{
 			send_wait((u32 )0XAE,(u8 *)"LED1_ON",8);
-			OSTaskResume(11);
+			//OSTaskResume(11);
 		}
 		if(set_task_point(150,100,(u8 *)"LED1_OFF")==1)
 		{
@@ -98,8 +101,10 @@ void check_task(void *arg)
 			send_wait((u32 )0XAE,(u8 *)"LED3_OF",8);
 		}
 		if(set_task_point(200,400,(u8 *)"quit")==1)
-		{
+		{	
+			flag1=1;
 					OSTaskSuspend(8);//挂起自己回到主界面
+		
 		}
 
 }

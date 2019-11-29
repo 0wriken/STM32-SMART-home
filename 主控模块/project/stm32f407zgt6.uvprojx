@@ -423,11 +423,6 @@
               <FilePath>..\user\inc\uart.h</FilePath>
             </File>
             <File>
-              <FileName>pwm_out.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\src\pwm_out.c</FilePath>
-            </File>
-            <File>
               <FileName>tim_in.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\src\tim_in.c</FilePath>

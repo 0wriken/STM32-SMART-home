@@ -7,6 +7,7 @@ u8 error3;
 u8 re2_buf[100];
 u32 g2id;
 u8 set_task_point(int x,int y,u8 *buf);
+ u8 flag1;
 void delay_mms(int ms);
 void sun_task(void *arg)
 {
@@ -16,7 +17,7 @@ void sun_task(void *arg)
 												0,
 											 &error3);
 	LCD_Clear(0,319,0,479,0xfff);
-	LCD_display_pic(200,250,(u8 *)gImage2_back);
+	LCD_display_pic(200,400,(u8 *)gImage2_back);
 	while(1)
 	{
 		if(can1_receive_msg(re2_buf,&g2id))
@@ -33,6 +34,7 @@ void sun_task(void *arg)
 		delay_mms(1000);//每一秒检测一次
 		if(set_task_point(200,400,(u8 *)"quit")==1)
 		{
+					flag1=1;
 					OSTaskSuspend(10);//挂起自己回到主界面
 		}
 }

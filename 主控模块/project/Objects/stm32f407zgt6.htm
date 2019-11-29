@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\stm32f407zgt6.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\stm32f407zgt6.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Nov 29 01:15:11 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Nov 29 14:40:19 2019
 <BR><P>
 <H3>Maximum Stack Usage =        368 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -112,7 +112,7 @@ Function Pointers
  <LI><a href="#[27]">TIM1_TRG_COM_TIM11_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[26]">TIM1_UP_TIM10_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[29]">TIM2_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
- <LI><a href="#[2a]">TIM3_IRQHandler</a> from pwm_out.o(i.TIM3_IRQHandler) referenced from startup_stm32f40_41xxx.o(RESET)
+ <LI><a href="#[2a]">TIM3_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[2b]">TIM4_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[3f]">TIM5_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[43]">TIM6_DAC_IRQHandler</a> from touch.o(i.TIM6_DAC_IRQHandler) referenced from startup_stm32f40_41xxx.o(RESET)
@@ -160,9 +160,9 @@ Global Symbols
 
 <P><STRONG><a name="[12b]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[12c]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[12c]"></a>__decompress</STRONG> (Thumb, 100 bytes, Stack size unknown bytes, __dclz77c.o(!!dclz77c), UNUSED)
 
-<P><STRONG><a name="[12d]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[12d]"></a>__decompress2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dclz77c.o(!!dclz77c), UNUSED)
 
 <P><STRONG><a name="[12e]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
@@ -516,6 +516,9 @@ Global Symbols
 <P><STRONG><a name="[29]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f40_41xxx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
 </UL>
+<P><STRONG><a name="[2a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f40_41xxx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
+</UL>
 <P><STRONG><a name="[2b]"></a>TIM4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f40_41xxx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
 </UL>
@@ -632,9 +635,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
 </UL>
-<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_adjust
+<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_adjust
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_xyad_aveval
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_wait
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;water_task
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_task
@@ -907,6 +910,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;water_task
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sun_task
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_task
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_task
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play_task
 </UL>
@@ -1154,7 +1158,6 @@ Global Symbols
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_task
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_task
 </UL>
 
 <P><STRONG><a name="[df]"></a>OSTaskReturnHook</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_cpu_c.o(i.OSTaskReturnHook))
@@ -1376,9 +1379,6 @@ Global Symbols
 <P><STRONG><a name="[28]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 188 bytes, Stack size 0 bytes, tim_in_1.o(i.TIM1_CC_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
 </UL>
-<P><STRONG><a name="[2a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 204 bytes, Stack size 0 bytes, pwm_out.o(i.TIM3_IRQHandler))
-<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
-</UL>
 <P><STRONG><a name="[43]"></a>TIM6_DAC_IRQHandler</STRONG> (Thumb, 192 bytes, Stack size 16 bytes, touch.o(i.TIM6_DAC_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
 <LI>Call Chain = TIM6_DAC_IRQHandler &rArr; get_xyad_aveval &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
@@ -1526,7 +1526,6 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_wait
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;water_task
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sun_task
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_task
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play_task
 </UL>
 
@@ -1555,16 +1554,14 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can1_send_msg
 </UL>
 
-<P><STRONG><a name="[69]"></a>check_task</STRONG> (Thumb, 342 bytes, Stack size 8 bytes, check_task.o(i.check_task))
+<P><STRONG><a name="[69]"></a>check_task</STRONG> (Thumb, 314 bytes, Stack size 8 bytes, check_task.o(i.check_task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256 + Unknown Stack Size
 <LI>Call Chain = check_task &rArr; send_wait &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_display_pic
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPend
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can1_receive_msg
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_wait
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_task_point
@@ -1586,8 +1583,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ab]"></a>delay_ms</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, delay.o(i.delay_ms))
-<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_adjust
+<BR><BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_adjust
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 </UL>
 
 <P><STRONG><a name="[114]"></a>delay_us</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, delay.o(i.delay_us))
@@ -1678,11 +1675,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_adjust
 </UL>
 
-<P><STRONG><a name="[68]"></a>lcd_task</STRONG> (Thumb, 214 bytes, Stack size 0 bytes, lcd_task.o(i.lcd_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<P><STRONG><a name="[68]"></a>lcd_task</STRONG> (Thumb, 286 bytes, Stack size 8 bytes, lcd_task.o(i.lcd_task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
 <LI>Call Chain = lcd_task &rArr; set_task_point &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_display_pic
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPost
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
@@ -1723,8 +1721,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sun_task
 </UL>
 
-<P><STRONG><a name="[6a]"></a>play_task</STRONG> (Thumb, 226 bytes, Stack size 8 bytes, play_task_1.o(i.play_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<P><STRONG><a name="[6a]"></a>play_task</STRONG> (Thumb, 242 bytes, Stack size 16 bytes, play_task_1.o(i.play_task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = play_task &rArr; set_task_point &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_mms
@@ -1741,9 +1739,9 @@ Global Symbols
 <P><STRONG><a name="[105]"></a>return_xy_adval</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, touch.o(i.return_xy_adval))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = return_xy_adval &rArr; send_touch_cmd
 </UL>
-<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_touch_cmd
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_touch_cmd
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rev_touch_data
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_xyad_aveval
 </UL>
@@ -1822,7 +1820,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[6c]"></a>sun_task</STRONG> (Thumb, 190 bytes, Stack size 16 bytes, sun_task.o(i.sun_task))
+<P><STRONG><a name="[6c]"></a>sun_task</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, sun_task.o(i.sun_task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = sun_task &rArr; set_task_point &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1846,8 +1844,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 336 + Unknown Stack Size
 <LI>Call Chain = touch_adjust &rArr; lcd_dis_adjust_point &rArr; display_line &rArr; sin &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_d2iz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_dis_adjust_point
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_dis_adjust_point
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -1872,8 +1870,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_init
 </UL>
 
-<P><STRONG><a name="[6b]"></a>water_task</STRONG> (Thumb, 232 bytes, Stack size 8 bytes, water_task.o(i.water_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<P><STRONG><a name="[6b]"></a>water_task</STRONG> (Thumb, 248 bytes, Stack size 16 bytes, water_task.o(i.water_task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = water_task &rArr; set_task_point &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_mms
