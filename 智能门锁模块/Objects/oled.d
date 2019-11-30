@@ -1,0 +1,9 @@
+.\objects\oled.o: user\src\oled.c
+.\objects\oled.o: .\user\inc\oled.h
+.\objects\oled.o: .\cmsis\stm32f10x.h
+.\objects\oled.o: .\cmsis\core_cm3.h
+.\objects\oled.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\oled.o: .\cmsis\system_stm32f10x.h
+.\objects\oled.o: .\user\inc\io_bit.h
+.\objects\oled.o: .\user\inc\spi.h
+.\objects\oled.o: .\user\inc\delay.h

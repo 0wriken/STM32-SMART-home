@@ -1,0 +1,13 @@
+.\objects\uart_task.o: task\uart_task.c
+.\objects\uart_task.o: task\task.h
+.\objects\uart_task.o: .\cmsis\stm32f10x.h
+.\objects\uart_task.o: .\cmsis\core_cm3.h
+.\objects\uart_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart_task.o: .\cmsis\system_stm32f10x.h
+.\objects\uart_task.o: .\UCOSII\Source\ucos_ii.h
+.\objects\uart_task.o: .\UCOSII\Source\os_cfg.h
+.\objects\uart_task.o: .\UCOSII\ports\os_cpu.h
+.\objects\uart_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart_task.o: .\user\inc\uart.h
+.\objects\uart_task.o: .\user\inc\delay.h

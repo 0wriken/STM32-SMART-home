@@ -1,0 +1,16 @@
+.\objects\funtion.o: user\src\funtion.c
+.\objects\funtion.o: .\user\inc\funtion.h
+.\objects\funtion.o: .\cmsis\stm32f10x.h
+.\objects\funtion.o: .\cmsis\core_cm3.h
+.\objects\funtion.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\funtion.o: .\cmsis\system_stm32f10x.h
+.\objects\funtion.o: .\user\inc\at24c02.h
+.\objects\funtion.o: .\user\inc\time.h
+.\objects\funtion.o: .\user\inc\MPR121.h
+.\objects\funtion.o: .\user\inc\io_bit.h
+.\objects\funtion.o: .\user\inc\monochome_oled.h
+.\objects\funtion.o: .\user\inc\oled_memory.h
+.\objects\funtion.o: .\user\inc\MG200.h
+.\objects\funtion.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\funtion.o: .\user\inc\uart.h
+.\objects\funtion.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h

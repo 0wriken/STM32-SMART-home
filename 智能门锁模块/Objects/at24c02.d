@@ -1,0 +1,9 @@
+.\objects\at24c02.o: user\src\at24c02.c
+.\objects\at24c02.o: .\user\inc\at24c02.h
+.\objects\at24c02.o: .\cmsis\stm32f10x.h
+.\objects\at24c02.o: .\cmsis\core_cm3.h
+.\objects\at24c02.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\at24c02.o: .\cmsis\system_stm32f10x.h
+.\objects\at24c02.o: .\user\inc\iic.h
+.\objects\at24c02.o: .\user\inc\io_bit.h
+.\objects\at24c02.o: .\user\inc\delay.h

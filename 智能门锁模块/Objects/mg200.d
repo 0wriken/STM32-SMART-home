@@ -1,0 +1,12 @@
+.\objects\mg200.o: user\src\MG200.c
+.\objects\mg200.o: .\user\inc\MG200.h
+.\objects\mg200.o: .\cmsis\stm32f10x.h
+.\objects\mg200.o: .\cmsis\core_cm3.h
+.\objects\mg200.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mg200.o: .\cmsis\system_stm32f10x.h
+.\objects\mg200.o: .\user\inc\io_bit.h
+.\objects\mg200.o: .\user\inc\uart.h
+.\objects\mg200.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mg200.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\mg200.o: .\user\inc\delay.h
+.\objects\mg200.o: .\user\inc\oled_memory.h

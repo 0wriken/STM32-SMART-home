@@ -1,0 +1,13 @@
+.\objects\finger_task.o: task\finger_task.c
+.\objects\finger_task.o: task\task.h
+.\objects\finger_task.o: .\cmsis\stm32f10x.h
+.\objects\finger_task.o: .\cmsis\core_cm3.h
+.\objects\finger_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\finger_task.o: .\cmsis\system_stm32f10x.h
+.\objects\finger_task.o: .\UCOSII\Source\ucos_ii.h
+.\objects\finger_task.o: .\UCOSII\Source\os_cfg.h
+.\objects\finger_task.o: .\UCOSII\ports\os_cpu.h
+.\objects\finger_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\finger_task.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\finger_task.o: .\user\inc\uart.h
+.\objects\finger_task.o: .\user\inc\delay.h

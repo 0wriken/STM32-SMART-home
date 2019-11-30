@@ -1,0 +1,9 @@
+.\objects\mpr121.o: user\src\MPR121.c
+.\objects\mpr121.o: .\user\inc\MPR121.h
+.\objects\mpr121.o: .\cmsis\stm32f10x.h
+.\objects\mpr121.o: .\cmsis\core_cm3.h
+.\objects\mpr121.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mpr121.o: .\cmsis\system_stm32f10x.h
+.\objects\mpr121.o: .\user\inc\io_bit.h
+.\objects\mpr121.o: .\user\inc\iic.h
+.\objects\mpr121.o: D:\keil5MDK\ARM\ARMCC\Bin\..\include\stdio.h

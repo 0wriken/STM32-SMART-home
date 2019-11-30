@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wriken wriken, wriken, LIC=Z3C74-FH678-INKA7-EWR2Z-HQE6T-YY03M
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.26.2.0
+Toolchain Path:  D:\keil5MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\若拙\Desktop\门锁\SmartLock.uvprojx
+Project File Date:  10/05/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil5MDK\ARM\ARMCC\Bin'
+Build target 'SmartLock'
+compiling CheckPwTask.c...
+task\CheckPwTask.c(115): warning:  #1-D: last line of file ends without a newline
+  }
+task\CheckPwTask.c: 1 warning, 0 errors
+compiling RootFutionTask.c...
+task\RootFutionTask.c(56): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(i3!=88&&i3!=-48)  //判断有按键按下时
+task\RootFutionTask.c(60): warning:  #68-D: integer conversion resulted in a change of sign
+  			if(i3==-13||i3==-6)
+task\RootFutionTask.c(60): warning:  #68-D: integer conversion resulted in a change of sign
+  			if(i3==-13||i3==-6)
+task\RootFutionTask.c(71): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(i2[1]==-6||i2[0]==-6)   //按键为*时退出
+task\RootFutionTask.c(71): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(i2[1]==-6||i2[0]==-6)   //按键为*时退出
+task\RootFutionTask.c(73): warning:  #68-D: integer conversion resulted in a change of sign
+  			if(i2[1]==-13)//当有确认键
+task\RootFutionTask.c(123): warning:  #111-D: statement is unreachable
+  		case 3:while(1);break;
+task\RootFutionTask.c(124): warning:  #111-D: statement is unreachable
+  		case 4:while(1);break;
+task\RootFutionTask.c(125): warning:  #111-D: statement is unreachable
+  		case 5: while(1);break;
+task\RootFutionTask.c(126): warning:  #111-D: statement is unreachable
+  		case 6:while(1);break;
+task\RootFutionTask.c(127): warning:  #111-D: statement is unreachable
+  		case 7:while(1);break;
+task\RootFutionTask.c(154): warning:  #111-D: statement is unreachable
+  		case 10:while(1);break;  
+task\RootFutionTask.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=15540 RO-data=7876 RW-data=180 ZI-data=8052  
+".\Objects\SmartLock.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_SmartLock
+  D:\keil5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
